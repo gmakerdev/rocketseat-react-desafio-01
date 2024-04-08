@@ -1,10 +1,11 @@
-import './App.css'
+import './App.module.css'
+import './global.css';
 
 export function App() {
 
   return (
       <div>
-        Início desafio Rocketseat ReactJS
+        Setup Projeto Rocketseta - ReactJS - Desafio 01
       </div>
   )
 }
