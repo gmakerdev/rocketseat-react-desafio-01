@@ -20,14 +20,6 @@
     }
 }
 
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
-    background-color: var(--gray-700);
-}
-
 .content {
     line-height: 1.6;
     background-color: var(--gray-600);

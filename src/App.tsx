@@ -3,16 +3,14 @@ import { PlusCircle } from 'phosphor-react';
 import styles from './App.module.css';
 import './global.css';
 
-import logo from './assets/logo.svg';
 import clipboard from './assets/clipboard.svg';
+import { Header } from './components/Header';
 
 export function App() {
 
   return (
     <div>
-      <header className={styles.header}>
-        <img src={logo} alt="Logo TO DO list" />
-      </header>
+      <Header />
       <div>
         <main className={styles.content}>
           <div className={styles.newTask}>
