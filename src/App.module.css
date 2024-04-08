@@ -1,3 +1,25 @@
+.wrapper {
+    max-width: 70rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+
+    display: grid;
+    grid-template-columns: 256px 1fr;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+
+    html {
+        font-size: 87.5%;
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -6,6 +28,122 @@
     background-color: var(--gray-700);
 }
 
-.wrapper {
+.content {
+    line-height: 1.6;
     background-color: var(--gray-600);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.newTask {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: calc(0px - 1.5rem - 6px)
+}
+
+.newTask input {
+    height: 54px;
+    min-width: 638px;
+    color: var(--gray-300);
+    font-size: 16;
+    background-color: var(--gray-500);
+    border: 1px solid var(--gray-700);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-right: 0.5rem;
+}
+
+.newTask form {
+    display: flex;
+}
+
+.newTask input:focus {
+    color: var(--gray-100);
+    border: 1px solid var(--purple-dark);
+}
+
+.newTask button {
+    color: var(--gray-100);
+    background-color: var(--blue-dark);
+
+    display: flex;
+    align-items: center;
+
+    border: 0;
+    height: 54px;
+    border-radius: 8px;
+    padding: 1rem;
+    font-size: 14;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.newTask button svg {
+    margin-left: 0.5rem;
+}
+
+.contentEmpty {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.emptyTask {
+    display: flex;
+    flex-direction: column;
+
+    width: 736px;
+    min-height: 287px;
+}
+
+.emptyTask header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info {
+    font-size: 14;
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.done {
+    font-size: 14;
+    font-weight: bold;
+    color: var(--purple);
+}
+
+.roudedCount {
+    color: var(--gray-200);
+    background-color: var(--gray-400);
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: bold;
+    /* superior | direita | inferior | esquerda */
+    padding: 2px 8px 2px 8px;
+}
+
+.listBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 244px;
+
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--gray-300);
+    border-radius: 8px;
+}
+
+.listBox img {
+    margin-bottom: 1rem;
 }
