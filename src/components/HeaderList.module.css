@@ -1,0 +1,33 @@
+.headerList {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.headerList aside {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: bold;
+}
+
+.info {
+    color: var(--blue);
+}
+
+.done {
+    color: var(--purple);
+}
+
+.roudedCount {
+    color: var(--gray-200);
+    background-color: var(--gray-400);
+
+    border-radius: 16px;
+    font-size: 0.75rem;
+
+    /* superior | direita | inferior | esquerda */
+    padding: 2px 8px 2px 8px;
+}

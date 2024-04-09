@@ -5,6 +5,7 @@ import './global.css';
 
 import clipboard from './assets/clipboard.svg';
 import { Header } from './components/Header';
+import { HeaderList } from './components/HeaderList';
 
 export function App() {
 
@@ -19,16 +20,8 @@ export function App() {
         </div>
 
         <div className={styles.taskContent}>
-          <header className={styles.headerList}>
-            <aside>
-              <p className={styles.info}>Tarefas criadas </p>
-              <span className={styles.roudedCount}>0</span>
-            </aside>
-            <aside>
-              <p className={styles.done}>Concluidas</p>
-              <span className={styles.roudedCount}>0</span>
-            </aside>
-          </header>
+          
+          <HeaderList tasksCreated={0} tasksDone={0} />
 
           <div className={styles.emptyContent}>
             <img src={clipboard} />
